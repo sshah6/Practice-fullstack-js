@@ -101,8 +101,8 @@ var quotes = [
 function getIndexesOf(val, string){
     let indexArray = [];
     for(let i = 0; i < string.length; i++){
-        if(val === string[i]){
-            indexArray.push(i);
+        if(val === string[i]){      //when the value entered equals the looped index of elements
+            indexArray.push(i);     //printing the related index of the element
         }
     }
 return indexArray;
@@ -111,14 +111,14 @@ return indexArray;
 
 //(8)
 function removeAll(val, input){
-    let resultArr = [];
+    let resultArr = [];         //declaring a new array
     for(let i = 0; i < input.length; i++){
-        if(val === input[i]){  
-            delete input[i];   
+        if(val === input[i]){   //when the value entered equals the index of elements
+            delete input[i];    //deleting the related element of array
         }
-        resultArr.push(input[i]);
+        resultArr.push(input[i]);   //pushing the remained elements of array in a new array
     }
-    return resultArr.join("").split("");
+    return resultArr.join("").split("");//joining and splitting them to remove empty spaces of deleted values
 }
 // console.log(removeAll(1, [1,3,1,4,3,2,1]));
 // console.log(removeAll("a", ["b","a","n","a","a"]));
@@ -129,10 +129,10 @@ function firstTenFibonacciNumbers(){
     let n2 = 1;
     let nextTerm;
     for(let i = 0; i <= 10; i++){
-        console.log(n1);
-        nextTerm = n1 + n2;
-        n1 = n2;
-        n2 = nextTerm;
+        console.log(n1);        //first printing the n1 (0)
+        nextTerm = n1 + n2;     //storing the sum of n1 and n2 every time it loops
+        n1 = n2;                //setting the value of n1 to n2 so it rolls back to value one
+        n2 = nextTerm;          //setting the n2 to be the next value ahead
     }
 }
 //firstTenFibonacciNumbers();
@@ -161,8 +161,6 @@ function moveFirstToLast(arr){
 
 //(12)
 function zip(arr1, arr2){
-    
-    
     for(let i = 0; i <= arr1.length + arr2.length; i++){
         combo = new Array();
         let arr1Val = arr1.shift();
