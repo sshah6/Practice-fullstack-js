@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML Forms practice</title>
+    </head>
+    <body>
+    
+      <!--GET throws the info in url and POST does not-->
+      <!--If no method it defaults to GET request-->
+      <!-- ==============> first exercise <==================-->
+    <form action="https://request-inspector.glitch.me/" method="GET">
+    
+        <label for="first_name">First name &#42;</label><br>
+        <input id="first_name" name="first_name" type="text" placeholder="type first-name" value="">
+        <br></br>
+
+        <label for="last_name">Last name </label><br>
+        <input id="last_name" name="last_name" type="text" placeholder="type last name" value=""><br><br>
+     
+        <label for="business_name">Business name *</label><br>
+        <input id="business_name" name="business_name" type="text" placeholder="business name here" value=""><br><br>
+
+        <label for="email">E-mail *</label><br>
+        <input id="email" name="email" type="email" placeholder="type email" value=""><br><br>
+
+        <label for="phone_number">Phone number *</label><br>
+        <input id="phone_number" name="phone_number" type="phone_number" placeholder="(000)-000-0000" value=""><br><br>
+
+        <label for="product_list">Text area *</label><br>
+        <textarea id="product_list" name="product_list" type="textarea" placeholder="list product you are selling" value=""> </textarea><br><br>
+
+        <label for="request">Special Request *</label><br>
+        <input id="request" name="request" type="text" placeholder="type request here" value=""><br><br>
+        <button>Submit</button>
+    </form>
+    <!--==============> second exercise <==================-->
+    <br><br>
+    <h1>Pet registration form</h1>
+    <form action="https://request-inspector.glitch.me/" method="GET">
+        
+        <label for="pet_type">Pet type</label><br>
+        <input id="pet_type" name="pet_name" type="text" placeholder="pet name here">
+        <br><br>
+
+        <label for="vaccinated">Is pet Vaccinated</label><br>Yes
+        <input id="vaccinated" name="vaccinated" type="radio" value="yes" >
+        No
+        <input id="vaccinated" name="vaccinated" type="radio" value="No" >
+        
+        <br><br>
+        <label for="service_days">Service schedule</label><br>
+        <input id="service_days" name="service_days" type="number" placeholder="enter number of days">
+        <br><br>
+
+        <label for="start_date">Date from: </label><br>
+        <input id="start_date" name="start_date" type="date" placeholder="dd/mm/yy">
+        <br><br>
+        <label for="request">Special Request *</label><br>
+        <input id="request" name="request" type="text" placeholder="type special request" value=""><br><br>
+
+        <label for="foods">Choose foods</label><br>
+        <select name="foods" id="foods">
+            <option value="catfood">cat food</option>
+            <option value="tuna">Tuna</option>
+            <option value="chicken">Chicken</option>
+            <option value="meat">beef</option>
+        </select>  
+        <br><br>
+        <button>Submit</button>
+    </form>
+    </body>
+</html>
