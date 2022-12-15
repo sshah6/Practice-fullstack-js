@@ -1,0 +1,58 @@
+body{
+    background-image: url("forest.jpg");
+    background-size: 100%;   
+}
+
+.logo{
+    font-family: sans-serif;
+    position: absolute;
+    top: 25px;
+    left: 75px;
+    font-size: 50px;
+    /* font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; */
+    color:rgb(249, 250, 249);
+}
+
+.coming-soon{
+    font-family: sans-serif;
+    position:absolute;
+    top:40%;
+    left:33%;
+    color:aliceblue;
+    font-size: 80px;
+    text-transform: uppercase;
+}
+
+.line{
+    position:absolute;
+    background-color:aliceblue;
+    top: 54%; 
+    left: 42%;
+    width: 250px;
+    height: 1px;    
+}
+.num-days{
+    position:absolute;
+    color:aliceblue;
+    top: 55%;
+    left:45%; 
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+.footer{
+    position:absolute;
+    color:aliceblue;
+    bottom: 25px;
+    left: 75px;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+.a{
+    position:absolute;
+    color:aliceblue;
+    bottom: 20px;
+    left: 240px;
+    font-size: 30px;
+    font-family: sans-serif;
+}
