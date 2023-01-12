@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BOM and DOM practice</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+  <body>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <div class="container vh-100 d-flex justify-content-center">
+        <div class="row">
+            <div class="col-12 mx-auto d-flex my-auto justify-content-center h-5">
+                <button class="btn1 btn btn-primary mx-1"> Click me</button>
+                <button class=" btn2 btn btn-primary mx-1"> Don't click me</button>
+                <button class="btn3 btn btn-danger mx-1 "> Defuse Bomb!</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        "use strict";
+        let btn_1 = document.getElementsByClassName("btn1");
+        let btn_2 = document.querySelector("btn2");
+        let btn_3 = document.querySelector("btn3");
+
+        let creatAlert = function(){
+            console.log("hello");
+            alert("Hello there!!");
+        }
+        btn_1.addEventListener("click", creatAlert);
+    </script>
+
+  </body>
+</html>
