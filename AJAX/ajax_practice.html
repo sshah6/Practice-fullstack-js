@@ -1,8 +1,5 @@
 <!-- ## AJAX and Parsing Bonuses
 
-### Joke and Quote Page
-
-Create single page app with a center div and one button on the left and right of this center div. When the left button is clicked, a random joke should be displayed in the center div from [Dad Jokes API](https://dadjokes.io/documentation/endpoints/random-jokes). When the right button is clicked, a random programming quote should be displayed in the center div from [Programming Quotes API](http://quotes.stormconsultancy.co.uk/api).
 
 ### Restaurant API
 
@@ -47,3 +44,62 @@ Using the endpoint ```https://gist.githubusercontent.com/ryanorsinger/f77e5ec94d
 - List of all companies represented by the users
 - Name the most commonly occuring eye-color.
 - What's the balance of all non-active accounts vs. the balance of all active accounts? -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AJAX Practice</title>
+    <link rel="shortcut icon" href="about:blank">
+    <style>
+        article {
+            background-color: cornsilk;
+            border: 2px solid black;
+            margin-bottom: 5px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div id="Jokes"></div>
+            <button id="update">Update w/Ajax</button>
+        </div>
+    </div>
+</div>
+   
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function() {
+        "use strict";
+//         ### Joke and Quote Page
+
+// Create single page app with a center div and one button on the left and right of this center div. When the left button is clicked, a random joke should be displayed in the center div from [Dad Jokes API](https://dadjokes.io/documentation/endpoints/random-jokes). When the right button is clicked, a random programming quote should be displayed in the center div from [Programming Quotes API](http://quotes.stormconsultancy.co.uk/api).
+
+$.ajax('https://dadjokes.io/documentation/endpoints/random-jokes').done(function(jokes){
+    console.log(jokes);
+});
+
+        
+    // $.ajax('file.json').done(function(data){
+    //         console.log(data);
+                
+    //         let html = '';
+    //             for(let i = 0; i < data.length; i++){
+    //                 html += 
+    //                     `<article>
+    //                     <h3> Order # ${data[i].orderNumber} </h3>
+    //                     <dl>
+    //                     <dt>Item Ordered</dt>
+    //                     <dd>${data[i].itemOrdered}</dd>
+    //                     <dt>Ordered by</dt>
+    //                     <dd>${data[i].orderedBy}</dd>
+    //                     </dl>
+    //                     </article>`;    
+    //                 }
+    //             $('#orders').html(html);
+    //         });
+    });
+</script>
+</body>
+</html>
